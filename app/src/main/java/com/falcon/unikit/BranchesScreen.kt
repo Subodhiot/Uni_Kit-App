@@ -106,7 +106,7 @@ fun SubjectList(
     navigateToContentScreen: (String, String) -> Unit
 ) {
     val subjectViewModel : SubjectViewModel = hiltViewModel()
-//    val subjectss = emptyList<State<List<SubjectItem>>>()
+
     val subjects by rememberUpdatedState(subjectViewModel.subjects.collectAsState())
     val isLoading = subjects.value.isEmpty()
     LaunchedEffect(branch.branchID) {

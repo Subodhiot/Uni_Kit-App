@@ -139,9 +139,6 @@ fun SelectCollegeScreen(
 
 
 
-
-
-
         Spacer(modifier = Modifier
             .size(20.dp))
         Button(onClick = {
