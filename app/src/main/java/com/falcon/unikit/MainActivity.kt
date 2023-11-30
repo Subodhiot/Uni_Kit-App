@@ -210,7 +210,7 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 val context = LocalContext.current
                 val sharedPreferences = remember {
-                    context.getSharedPreferences("token_prefs", Context.MODE_PRIVATE)
+                    context.getSharedPreferences("token_prefs",Context.MODE_PRIVATE)
                 }
                 NavHost(navController = navController, startDestination = "walk_through_screen") {
                     composable("walk_through_screen") {
@@ -230,7 +230,7 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     composable("otp_get") {
-                        OtpLogin()
+                        //OtpLogin()
                     }
                     composable("sign_in") {
                         BackHandler(
