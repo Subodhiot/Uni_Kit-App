@@ -59,7 +59,6 @@ fun MainScreen(yearList: State<List<YearItem>>, navController: NavHostController
     ) {
         ModalDrawerSample(yearList, navController, navigateToBranchScreen)
     }
-
 }
 
 @Composable
@@ -207,5 +206,4 @@ fun DrawerContent(navController: NavHostController) {
             navController.navigate("settings")
         }
     }
-
 }
